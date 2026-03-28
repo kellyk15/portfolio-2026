@@ -55,12 +55,10 @@ function toggleMenu() {
     deNavigatie.classList.toggle("toonmenu");
 
     if (deNavigatie.classList.contains("toonmenu")) {
-        // menu opent: animatie toevoegen
         deItems.forEach(function(item) {
             item.classList.add("liAppear");
         });
     } else {
-        // menu sluit: animatie verwijderen zodat het opnieuw kan
         deItems.forEach(function(item) {
             item.classList.remove("liAppear");
         });
