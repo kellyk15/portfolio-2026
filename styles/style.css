@@ -1,0 +1,349 @@
+*, *::after, *::before {
+    box-sizing:border-box;  
+}
+
+*{
+	margin: 0;
+	line-height: calc(1em + 0.5rem);
+}
+
+@font-face {
+    font-family: 'Crimson Text Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Crimson Text Regular'), url('../fonts/CrimsonText-Regular.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Crimson Text Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Crimson Text Italic'), url('../fonts/CrimsonText-Italic.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Crimson Text SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Crimson Text SemiBold'), url('../fonts/CrimsonText-SemiBold.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Crimson Text SemiBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Crimson Text SemiBold Italic'), url('../fonts/CrimsonText-SemiBoldItalic.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Crimson Text Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Crimson Text Bold'), url('../fonts/CrimsonText-Bold.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Crimson Text Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Crimson Text Bold Italic'), url('../fonts/CrimsonText-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Anonymous Pro'), url('../fonts/Anonymous_Pro.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Anonymous Pro Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Anonymous Pro Italic'), url('../fonts/Anonymous_Pro_I.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Anonymous Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Anonymous Pro Bold'), url('../fonts/Anonymous_Pro_B.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Anonymous Pro Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Anonymous Pro Bold Italic'), url('../fonts/Anonymous_Pro_BI.woff') format('woff');
+}
+
+html{
+	scroll-behavior: smooth;
+
+    color-scheme: light dark;
+    --colour-background: light-dark(#F1EDE1, #1E1E1E);
+    --colour-text: light-dark(#1E1E1E, #F1EDE1);
+    --colour-primary: light-dark(#D3638C, rgb(211 99 140 / 0.8));
+    --colour-primary-border: light-dark(#A72656, #A72656);
+
+    --color-secondary: light-dark(#C6DF77, rgb(198 223 119 / 0.8));
+    --color-secondary-border: light-dark(#819B31, #819B31);
+
+    font-family: 'Anonymous Pro', sans-serif;
+    color: var(--colour-text);
+    background-color: var(--colour-background);
+
+    --size-xxs: 0.5rem;
+	--size-xs: 0.75rem;
+	--size-sm: 0.875rem;
+	--size-base: 1rem;
+	--size-lg: 1.125rem;
+	--size-xl: 1.25rem;
+	--size-2xl: 1.5rem;
+	--size-3xl: 1.875rem;
+	--size-4xl: 2.25rem;
+	--size-5xl: 3rem;
+	--size-6xl: 3.75rem;
+	--size-7xl: 4.5rem;
+	--size-8xl: 6rem;
+	--size-9xl: 8rem;
+	--size-10xl: 10rem;
+}
+
+img,svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+button{
+	display: inline-block;
+	padding: 0;
+	border: none;
+	background: none;
+	cursor: pointer;
+	color: inherit;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Crimson Text Bold', serif;
+    color: var(--colour-primary);
+    -webkit-text-stroke: 1px var(--colour-primary-border);
+}
+
+.button-v1{
+    border: solid 1px var(--colour-primary-border);
+    background-color: var(--colour-primary);
+    color: var(--colour-background);
+    padding: var(--size-xxs) var(--size-2xl);
+    border-radius: var(--size-xxs);
+    
+    font-family: 'Anonymous Pro', sans-serif;
+    
+}
+
+
+/* nav styling */
+.logo{
+    width: auto;
+    height: var(--size-6xl);
+}
+
+nav {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    
+    display: flex;
+    flex-direction: column;
+    padding: var(--size-2xl) var(--size-2xl);
+    pointer-events: none;
+    background-color: var(--colour-background);
+
+    translate: 0 150%;
+    transition: translate 0.8s ease;
+	transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+}
+
+nav.toonmenu {
+    pointer-events: all;
+    translate: 0 0;
+}
+
+.menu {
+    color: var(--colour-primary);
+    width: var(--size-4xl);
+    height: var(--size-4xl);
+    display: block;
+    z-index: 200; 
+    position: relative;
+}
+
+
+nav a {
+	font-size: var(--size-xl);
+	text-decoration: none;
+	color: var(--colour-primary);
+	transition: color 0.3s;
+}
+
+nav a:hover{
+	color: var(--colour-primary);
+}
+
+
+ul{
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	list-style: none;
+    height: 100%;
+
+    & li{
+        list-style: none;
+        padding: var(--size-xxs) var(--size-xs);
+        border-radius: var(--size-xxs);
+        border: 1px solid transparent;
+        transition: border-color 0.5s ease;
+    }
+}
+
+/* ul li{
+    list-style: none;
+    padding: var(--size-xxs) var(--size-xs);
+    border-radius: var(--size-xxs);
+    border: 1px solid transparent;
+    transition: border-color 0.5s ease;
+} */
+
+.liAppear {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s both;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ul li:hover{
+    border: 1px solid var(--colour-primary-border);
+}
+
+.liAppear:nth-of-type(1) { animation-delay: 0.7s; }
+.liAppear:nth-of-type(2) { animation-delay: 0.8s; }
+.liAppear:nth-of-type(3) { animation-delay: 0.9s; }
+.liAppear:nth-of-type(4) { animation-delay: 1.0s; }
+.liAppear:nth-of-type(5) { animation-delay: 1.1s; }
+
+
+ul li a{
+    text-decoration: none;
+    color: var(--colour-primary);
+    padding: auto;
+    /* padding: var(--size-sm) var(--size-2xl); */
+}
+
+ul li a img{
+    height: 2.4em;
+    width: 100%;
+}
+
+ul li a svg{
+    height: 1.6em;
+    width: 100%;
+}
+
+
+/* ticker styling */
+.ticker {
+    overflow: hidden;
+    background-color: var(--color-secondary);
+    padding: var(--size-xs) 0;
+    border: 1px solid var(--color-secondary-border);
+    width: 100dvw;
+}
+
+.ticker-track {
+    display: flex;
+    gap: 0;
+    width: max-content;
+    animation: ticker 20s linear infinite;
+    will-change: transform;
+}
+
+.ticker-track span {
+    white-space: nowrap;
+    color: #1a1a1a;
+    padding: 0 var(--size-6xl);
+}
+
+@keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+
+/* .container{} */
+
+/* xs */
+@media (min-width: 475px) {
+	.container{
+		max-width: 475px;
+	}
+}
+
+/* sm */
+@media (min-width: 640px) {
+	
+}
+
+/* md */
+@media (min-width: 768px) {
+	.container{
+		max-width: 768px;
+	}
+}
+
+/* lg */
+@media (min-width: 1024px) {
+	.container{
+		max-width: 1024px;
+	}
+
+	.section {
+		margin-top: 10rem;
+	}
+}
+
+/* xl */
+@media (min-width: 1280px) {
+	.container{
+		max-width: 1280px;
+	}
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+	.container{
+		max-width: 1536px;
+	}
+}
