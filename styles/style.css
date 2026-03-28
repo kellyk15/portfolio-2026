@@ -403,6 +403,13 @@ ul{
     }
 }
 
+.work-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-2xl);
+    align-items: center;
+}
+
 .card-2 {
     background-color: var(--color-secondary);
     color: var(--colour-text);
@@ -494,6 +501,7 @@ ul{
 		max-width: 768px;
 	}
 
+    /* ── NAV STYLING ── */
     nav {
         padding: var(--size-2xl) var(--size-2xl);
         translate: 0% 0%;
@@ -527,6 +535,126 @@ ul{
     .menu {
         display: none;
     }
+
+    /* ── HERO STYLING ── */
+    .hero {
+        flex-direction: row;
+        text-align: left;
+        gap: var(--size-4xl);
+
+        & img{
+            width: 50%;
+            height: auto;
+        }
+
+        & h1{
+            font-size: var(--size-6xl);
+            translate: -28% -32%;
+            width: 140%;
+        }
+
+        div:nth-of-type(2) {
+            flex-direction: row;
+            margin-top: auto;
+
+            & button{
+                width: 100%;
+            }
+        }
+    }
+
+    /* ── WORK STYLING ── */
+    .works {
+        gap: var(--size-2xl);
+    
+        & h2 {
+            font-size: var(--size-4xl);
+        }
+    }
+
+    .work-card-content{
+        /* height: 100%; */
+        gap: var(--size-base);
+
+        & button {
+            margin-top: auto;
+        }
+    }
+    
+    .work-cards {
+        gap: var(--size-2xl);
+
+        width: 100%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(8, 1fr);
+
+        & img {
+            width: 80%;
+            height: auto;
+        }
+    }
+
+    .work-card {
+        height: 100%;
+
+        &:nth-of-type(1) {
+            grid-column: 1 / span 4;
+            flex-direction: row;
+            text-align: left;
+            
+            & img {
+                width: 40%;
+                height: auto;
+            }
+
+            & button{
+                align-self: flex-end;
+            }
+
+        }
+
+        &:nth-of-type(2),
+        &:nth-of-type(3),
+        &:nth-of-type(4),
+        &:nth-of-type(5) {
+            grid-column: span 2;
+            gap : var(--size-base);
+
+            & .work-card-content p:nth-of-type(2) {
+                display: none;
+            }
+        }
+
+        &:nth-of-type(6) {
+            grid-column: span 4;
+            flex-direction: row;
+            text-align: left;
+            
+            & img {
+                width: 40%;
+                height: auto;
+            }
+
+            & button{
+                align-self: flex-end;
+            }
+        }
+    }
+
+    .contact{
+        & img {        
+            width: 20%;
+            height: auto;
+        }
+
+        & h2{
+            font-size: var(--size-4xl);
+        }
+
+        & p {
+            width: 50%;
+        }
+    }
 }
 
 /* lg */
@@ -545,6 +673,22 @@ ul{
 	.container{
 		max-width: 1280px;
 	}
+
+    .hero {
+        gap: var(--size-5xl);
+        margin: var(--size-6xl) var(--size-7xl) var(--size-6xl) var(--size-7xl);
+
+        & h1{
+            font-size: var(--size-9xl);
+            translate: -20% -32%;
+            width: 130%;
+        }
+
+        & img {
+            width: 35%;
+            height: auto;
+        }
+    }
 }
 
 /* 2xl */
