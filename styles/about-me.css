@@ -1,0 +1,105 @@
+.about-me-container {
+    margin: 0 var(--size-2xl) var(--size-base) var(--size-2xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-2xl);
+    
+    & h1{
+        letter-spacing: -5%;
+        font-size: 2em;
+    }
+    & p{
+        font-size: var(--size-xs);
+    }
+}
+
+.about-me-info{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-xs);
+
+    & button{
+        width: fit-content;
+    }
+}
+
+.about-me-info-text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-xxs);
+
+    & img:nth-child(2){
+        width: 10vw;
+        align-self: center;
+        margin: var(--size-2xl) 0;
+    }
+}
+
+.about-me-photo{
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .about-me-container {
+        margin: var(--size-4xl) var(--size-9xl) var(--size-4xl) var(--size-9xl);
+    }
+
+    .about-me-container{
+        flex-direction: row;
+        gap: var(--size-9xl);
+
+        & h1{
+            font-size: var(--size-8xl);
+            /* letter-spacing: -5%; */
+        }
+
+        & p{
+            font-size: var(--size-base);
+        }
+    }
+
+    .about-me-info{
+        gap: var(--size-base);
+        max-width: 40%;
+    }
+
+    .about-me-hide{
+        display: none;
+    }
+
+    .about-me-photo {
+        display: block;
+        margin: auto;
+        position: relative;
+        height: 500px;
+        width: 100%;
+        aspect-ratio: 4/3;
+
+        & img:nth-child(2) {
+            width: 50%;
+            height: max-content;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        & img:nth-child(1) {
+            width: 60%;
+            height: max-content;
+            object-fit: cover;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        & img:nth-child(3) {
+            width: 15%;
+            position: absolute;
+            top: 45%;
+            left: 30%;
+            z-index: 4;
+        }
+    }
+}
