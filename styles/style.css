@@ -125,6 +125,12 @@ img,svg {
 	height: auto;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
 button{
 	display: inline-block;
 	padding: 0;
@@ -515,7 +521,7 @@ ul{
 
     /* ── NAV STYLING ── */
     nav {
-        padding: var(--size-2xl) var(--size-2xl);
+        padding: var(--size-5xl) var(--size-2xl);
         translate: 0% 0%;
         inset: unset;
         background-color: transparent;
@@ -538,6 +544,7 @@ ul{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
 
         div {
             width: fit-content;
@@ -679,6 +686,11 @@ ul{
 		max-width: 1024px;
 	}
 
+    header{
+        padding-left: var(--size-8xl);
+        padding-right: var(--size-8xl);
+    }
+
 	.section {
 		margin-top: 10rem;
 	}
@@ -771,4 +783,5 @@ ul{
 	.container{
 		max-width: 1536px;
 	}
+    
 }
