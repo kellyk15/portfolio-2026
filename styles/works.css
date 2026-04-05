@@ -276,3 +276,221 @@
     animation: ticker 20s linear infinite;
 
 }
+
+/* @media (min-width: 768px) {
+	.container{
+		max-width: 768px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container{
+		max-width: 1024px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.container{
+		max-width: 1280px;
+	}
+} */
+
+/* ── RESPONSIVE STYLING ── */
+
+@media (min-width: 768px) {
+	.container{
+		max-width: 768px;
+	}
+
+    .context, 
+    .context-info, 
+    .testing, 
+    .testing div,
+    .sue-if-container,
+    .sue-if-content,
+    .lo-fi,
+    .feedback,
+    .hi-fi-container{
+        gap: var(--size-2xl);
+    }
+
+    .hero-works-img-container img{
+        width: 40%;
+    }
+
+    .context-info{
+        flex-direction: row;
+        gap: var(--size-5xl);
+    }
+
+    /* ── TESTING STYLING ── */
+    .testing{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(5, 1fr); */
+        gap: var(--size-base);
+
+        & div:nth-of-type(1){
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+        }
+
+        & div:nth-of-type(2){
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        & div:nth-of-type(3){
+            grid-column: 2 / 3;
+            grid-row: 2 / 4;
+        }
+    }
+
+    .sue-if-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--size-base);
+
+        & div:nth-of-type(1){
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+        }
+
+        & div:nth-of-type(2){
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        & div:nth-of-type(3){
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+
+        & div:nth-of-type(4){
+            grid-column: 2 / 3;
+            grid-row: 2 / 4;
+        }
+
+        & div:nth-of-type(5){
+            grid-column: 1 / 3;
+            grid-row: 4 / 5;
+        }
+    }
+
+    .lo-fi div,
+    .feedback div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--size-base);
+
+        & ul{
+            justify-content: flex-start;
+
+            & li:hover{
+                border: 1px solid transparent;
+                cursor: default;
+            }
+        }
+    }
+
+    .sue-if-content div ul{
+        justify-content: flex-start;
+
+        & li:hover{
+            border: 1px solid transparent;
+            cursor: default;
+        }
+    }
+
+    .hi-fi-container{
+        & div:nth-of-type(2),
+        & div:nth-of-type(3),
+        & div:nth-of-type(4){
+            flex-direction: row;
+            gap: var(--size-5xl);
+
+            & img{
+                width: 40%;
+                height: auto;
+            }
+        }
+
+        & div:nth-of-type(3){
+            flex-direction: row-reverse;
+            text-align: right;
+
+            & div{
+                align-items: flex-end;
+            }
+        }
+
+        & div:nth-of-type(5) div{
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+	.container{
+		max-width: 1024px;
+	}
+
+    .works-page h1{
+        font-size: var(--size-5xl);
+    }
+
+    .hero-works-img-container img{
+        width: 30%;
+        padding: var(--size-3xl) 0;
+    }
+
+    .works-page p,
+    .feedback ul li{
+        font-size: var(--size-base);
+    }
+
+    .works-subheading,
+    .works-subheading-2,
+    .works-subheading-3{
+        font-size: var(--size-lg);
+    }
+
+    .testing div,
+    .sue-if-content div,
+    .hi-fi-container > div{
+        padding: var(--size-4xl);
+        /* gap: var(--size-3xl); */
+    }
+
+    .hi-fi-container div:nth-of-type(5){
+        gap: var(--size-3xl);
+    }
+
+    .testing{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--size-base);
+
+        & div:nth-of-type(1){
+            grid-column: 1 / 2;
+            grid-row: 1 / 4;
+        }
+
+        & div:nth-of-type(2){
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+        }
+
+        & div:nth-of-type(3){
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+	.container{
+		max-width: 1280px;
+	}
+}
