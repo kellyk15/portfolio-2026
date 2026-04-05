@@ -315,6 +315,31 @@
     }
 }
 
+/* ── CLOSETFY STYLING ── */
+.closetfy .hero-works-img-container{
+    & img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.context:nth-of-type(4){
+    background-color: var(--color-primary-pink);
+    padding: var(--size-2xl);
+    border-radius: var(--size-xxs);
+}
+
+.closetfy .hi-fi-container > div {
+    &:nth-of-type(2){
+        background-color: var(--color-primary-green);
+    }
+    &:nth-of-type(3){
+        background-color: var(--color-primary-green);
+    }
+    &:nth-of-type(4){
+        background-color: var(--color-primary-blue);
+    }
+}
 
 
 
@@ -521,6 +546,22 @@
                 align-items: flex-start;
             }
         }
+    }
+
+    /* ── CLOSETFY STYLING ── */
+
+    #closetfy-div{
+        flex-direction: row-reverse;
+        gap: var(--size-5xl);
+
+        & img{
+            width: 40%;
+            height: auto
+        }
+    }
+
+    .closetfy .hi-fi-container > div:has(#closetfy-div) div{
+        gap: var(--size-5xl);
     }
 }
 
