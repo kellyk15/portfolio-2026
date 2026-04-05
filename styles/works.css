@@ -277,6 +277,25 @@
 
 }
 
+/* ── DUNKIN' STYLING ── */
+.dunkin .hero-context{
+    gap: 0;
+}
+
+.dunkin .hi-fi-container > div {
+    &:nth-of-type(2){
+        background-color: var(--color-primary-green);
+    }
+    &:nth-of-type(3){
+        background-color: var(--color-primary-blue);
+    }
+
+    & video{
+        width: 100%;
+        height: auto;
+    }
+}
+
 /* @media (min-width: 768px) {
 	.container{
 		max-width: 768px;
@@ -428,6 +447,25 @@
             align-items: center;
             text-align: center;
         }
+    }
+
+        /* ── DUNKIN STYLING ── */
+
+    .dunkin .hi-fi-container{
+        align-items: center;
+    }
+
+    .dunkin .hi-fi-container > div {
+        width: 70%;
+
+        & video{
+            width: 30%;
+            height: auto;
+        }
+    }
+
+    .dunkin .hi-fi-container > div:nth-of-type(1) {
+        flex-direction: row;
     }
 }
 

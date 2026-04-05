@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Kelly Kha</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/about-me.css" rel="stylesheet">
+    <link href="styles/works.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png?v=2">
+</head>
+
+<body class="container works-page dunkin">
+    <header>
+        <div>
+            <a href="index.html">
+                <img class="logo" src="images/logo.png" alt="logo">
+            </a>
+
+            <button class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="more.html">More</a></li>
+                <li><a href="mailto:kellyh.kha@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                </a></li>
+
+                <li>
+                    <a href="http://www.linkedin.com/in/kelly-kha" target="_blank" rel="noopener noreferrer">
+                        <img src="images/linkedin.png" alt="linkedin icon">
+                    </a>
+                </li>
+            </ul>          
+        </nav>
+    </header>
+
+    <section class="hero-works">
+        <h1>Dunkin' Donuts —</h1>
+        <div class="hero-works-img-container">
+            <img src="images/works-dunkin.png" alt="">
+        </div>
+
+        <div class="hero-context">
+            <div>
+                <h2>Timeline</h2>
+                <p>3 weeks</p>
+                <p>september 2024 - october 2024</p>
+            </div>
+
+            <div>
+                <h2>Role</h2>
+                <p>Front-end developer</p>
+            </div>
+
+            <div>
+                <h2>Tools</h2>
+                <p>
+                    VS studio code <br>
+                    (HTML / CSS / Javascript)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="works-divider">
+
+    <section class="context">
+        <h2 class="works-subheading">Context</h2>
+        <div class="context-info">
+            <p>For this class i had to remake a website of my choice. In this 
+            class we only had to make 2 pages and we about learned about accessability, responsiveness and css animations.</p>
+            <p>We could choose between making our website responsive or adding animations and i chose to focus on css animations.</p>
+        </div>
+    </section>
+
+    <section class="shape">
+        <img src="images/shape.svg" alt="shape">
+    </section>
+
+    <section class="hi-fi-container">
+        <h2 class="works-subheading">Animations</h2>
+        <p>These are some of the animations I ended up making</p>
+
+        <div>
+            <div>
+                <h3 class="works-subheading">Loading screen</h3>
+                <p>
+                    I created the loading screen with css animation and used animation delay to have the letters appear smoothly one after the other.
+                </p>
+            </div>
+            <video autoplay controls muted loop>
+                <source src="images/dunkin-vid.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div>
+            <div>
+                <h3 class="works-subheading-2">Button animation</h3>
+
+                <p>
+                    For the buttons to make them look like it got bit I used ::before and ::after this kept the website looking visually interesting to look at.              
+                </p>
+            </div>
+            <video autoplay controls muted loop>
+                <source src="images/dunkin-vid2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- HAMBURGER MENU ANIMATION???? -->
+         <!-- <div>
+            <div>
+                <h3 class="works-subheading-2">Button animation</h3>
+
+                <p>
+                    For the buttons to make them look like it got bit I used ::before and ::after this kept the website looking visually interesting to look at.              
+                </p>
+            </div>
+            <video autoplay controls muted loop>
+                <source src="images/dunkin-vid3.mp4" type="video/mp4">
+            </video>
+        </div> -->
+
+        <div>
+            <div>
+                <h3 class="works-subheading-3">Hamburger menu</h3>
+                <p>
+                    For the menu I did a few different things such as transform to make menu a cross then when the menu gets clicked the navigation will appear from under and then when it gets clicked again it'll disappear one by one.
+                </p>
+            </div>
+            <video autoplay controls muted loop>
+                <source src="images/dunkin-vid4.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <div class="ticker ticker-bottom">
+        <div class="ticker-track">
+            <span>Kelly Kha</span>
+            <span>✳</span>
+            <span>UX design</span>
+            <span>✳</span>
+            <span>Front-end development</span>
+            <span>✳</span>
+            <span>CMD</span>
+            <span>✳</span>
+            <span>Creative</span>
+            <span>✳</span>
+            
+            <span>Kelly Kha</span>
+            <span>✳</span>
+            <span>UX design</span>
+            <span>✳</span>
+            <span>Front-end development</span>
+            <span>✳</span>
+            <span>CMD</span>
+            <span>✳</span>
+            <span>Creative</span>
+            <span>✳</span>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
