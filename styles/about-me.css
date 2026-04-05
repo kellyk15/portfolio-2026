@@ -111,7 +111,7 @@
 
 /* Outside of Design */
 .outside-of-design{
-    margin: 0 var(--size-2xl) var(--size-9xl) var(--size-2xl);
+    margin: 0 var(--size-2xl) 0 var(--size-2xl);
 
     display: flex;
     flex-direction: column;
