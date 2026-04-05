@@ -516,6 +516,16 @@ ul{
 	}
 }
 
+.contact button:nth-of-type(1)  a{
+    color: var(--colour-background);
+    text-decoration: none;
+}
+
+.contact button:nth-of-type(2)  a{
+    color: var(--colour-text);
+    text-decoration: none;
+}
+
 /* ── MEDIA QUERIES ── */
 /* .container{} */
 
