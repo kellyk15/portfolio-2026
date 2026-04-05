@@ -98,6 +98,14 @@ html{
     --color-secondary: light-dark(#C6DF77, rgb(198 223 119 / 0.8));
     --color-secondary-border: light-dark(#819B31, #819B31);
 
+    --color-primary-pink: light-dark(#F0D6DF, rgb(240 214 223 / 0.8));
+
+    --color-primary-green: light-dark(#DFEEAF, rgb(223 238 175 / 0.8));
+    --color-primary-dark-green: light-dark(#819B31, rgb(129 155 49 / 0.8));
+
+    --color-primary-blue: light-dark(#D4DBF0, rgb(212 219 240 / 0.8));
+    --color-primary-dark-blue: light-dark(#2B3962, rgb(43 57 98 / 0.8));
+    
     font-family: 'Anonymous Pro', sans-serif;
     color: var(--colour-text);
     background-color: var(--colour-background);
@@ -220,7 +228,7 @@ header div{
     align-items: center;
     padding: var(--size-2xl);
 
-    width: 100dvw;
+    width: 100%;
 }
 
 .logo{
@@ -389,6 +397,11 @@ ul{
     & h2 {
         font-size: var(--size-3xl);
     }
+
+    a{
+        color: var(--colour-text);
+        text-decoration: none;
+    }
 }
 
 .work-cards {
@@ -435,6 +448,11 @@ ul{
     & h3 {
         color: var(--colour-text);
     }
+
+    a{
+        color: var(--colour-background);
+        text-decoration: none;
+    }
 }
 
 .work-card img {
@@ -444,7 +462,7 @@ ul{
 
 /* ── SHAPE STYLING ── */
 .shape {
-    width: 100%;
+    /* width: 100%; */
     height: var(--size-3xl);
     margin: var(--size-5xl) 0;
 
@@ -521,7 +539,7 @@ ul{
 
     /* ── NAV STYLING ── */
     nav {
-        padding: var(--size-5xl) var(--size-2xl);
+        padding: var(--size-3xl) var(--size-2xl);
         translate: 0% 0%;
         inset: unset;
         background-color: transparent;
@@ -687,8 +705,8 @@ ul{
 	}
 
     header{
-        padding-left: var(--size-8xl);
-        padding-right: var(--size-8xl);
+        padding-left: var(--size-5xl);
+        padding-right: var(--size-5xl);
     }
 
 	.section {
