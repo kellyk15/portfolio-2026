@@ -781,6 +781,10 @@ ul{
         }
     }
 
+    .index p{
+        font-size: var(--size-base);
+    }
+
 }
 
 /* xl */
