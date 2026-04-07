@@ -323,6 +323,18 @@ ul{
     gap: var(--size-2xl);
 
     text-align: center;
+
+    & button{
+        &:nth-of-type(1) a{
+            color: var(--colour-background);
+            text-decoration: none;
+        }
+
+        &:nth-of-type(2) a{
+            color: var(--colour-text);
+            text-decoration: none;
+        }
+    }
 }
 
 .hero div {
@@ -402,6 +414,13 @@ ul{
         color: var(--colour-text);
         text-decoration: none;
     }
+}
+
+.work-card-div-1,
+.work-card-div-2 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-2xl);
 }
 
 .work-cards {
@@ -696,6 +715,7 @@ ul{
     .work-card-div-1,
     .work-card-div-2 {
         display: flex;
+        flex-direction: row;
         gap: var(--size-2xl);
         align-items: stretch;
         height: 350px;
