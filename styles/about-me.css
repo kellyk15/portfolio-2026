@@ -74,6 +74,11 @@
             padding: 0;
             margin-left: 10px;
         }
+
+        & li:hover{
+                border: 1px solid transparent;
+                cursor: default;
+            }
 }
 
 .logos {
