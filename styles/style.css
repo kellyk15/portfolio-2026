@@ -89,7 +89,7 @@
 html{
 	scroll-behavior: smooth;
 
-    color-scheme: light dark;
+    color-scheme: light;
     --colour-background: light-dark(#F1EDE1, #1E1E1E);
     --colour-text: light-dark(#1E1E1E, #F1EDE1);
     --colour-primary: light-dark(#D3638C, rgb(211 99 140 / 0.8));
@@ -826,7 +826,7 @@ ul{
         /* height: 100%; */
         padding: var(--size-4xl) var(--size-7xl);
         overflow: hidden;
-        transition: flex 0.5s cubic-bezier(0.34, 1.2, 0.64, 1);
+        transition: flex 0.5s cubic-bezier(0.34, 1, 0.64, 1);
     } 
     .work-card-content,
     .work-card img {
