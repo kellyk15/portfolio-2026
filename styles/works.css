@@ -19,6 +19,8 @@
     & hr{
         border: 0.5px solid var(--colour-primary);
     }
+
+    margin-bottom: var(--size-5xl);
 }
 
 .hero-works{
@@ -270,6 +272,7 @@
 
 .works-page .ticker-bottom{
     margin-top: 0;
+    width: 100%;
 }
 
 .works-page .ticker-track {
@@ -421,6 +424,99 @@
             text-decoration: none;
             padding: var(--size-xxs) var(--size-xs);
         }
+    }
+}
+
+/* browsertech */
+.browser-tech .context-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-2xl);
+    align-items: stretch;
+
+    & h2{
+        display: flex;
+        align-items: center;
+        padding: var(--size-xxs) var(--size-xs);
+        border-radius: 4px;
+        border: 2px solid var(--colour-primary);
+    }
+
+    & button{
+        background-color: var(--colour-primary);
+        padding: var(--size-xxs) var(--size-xs);
+        border-radius: 4px;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+        & a{
+            color: var(--colour-background);
+            text-decoration: none;
+            font-family: 'Anonymous Pro', sans-serif;
+        }
+
+        &:hover{
+            background-color: var(--colour-background);
+            border: 2px solid var(--colour-primary);
+            cursor: pointer;
+
+            & a{
+                color: var(--colour-primary);
+            }
+        }
+    }
+}
+
+.browser-tech .sue-if-content div {
+    &:nth-of-type(1) {
+        background-color: var(--color-primary-pink);
+    }
+
+    &:nth-of-type(2) {
+         background-color: var(--color-primary-green);
+    }
+
+    &:nth-of-type(3) {
+         background-color: var(--color-primary-blue);
+    }
+}
+
+.browser-tech .testing div {
+    &:nth-of-type(1) {
+        background-color: var(--color-primary-pink);
+    }
+
+    &:nth-of-type(2) {
+         background-color: var(--color-primary-green);
+    }
+
+    &:nth-of-type(3) {
+         background-color: var(--color-primary-blue);
+    }
+
+    &:nth-of-type(4) {
+         background-color: var(--color-primary-pink);
+    }
+
+    &:nth-of-type(5) {
+         background-color: var(--color-primary-green);
+    }
+
+    &:nth-of-type(6) {
+         background-color: var(--color-primary-blue);
+    }
+}
+
+.browser-tech .hero-context div{
+    width: 100%;
+}
+
+.browser-tech .reflection{
+    background-color: var(--color-primary-pink);
+    border-radius: var(--size-xxs);
+    padding: var(--size-2xl);
+
+    & p{
+        width: 100%;
     }
 }
 
@@ -800,12 +896,37 @@
             grid-row: 4 / 5;
         }
     }
+
+    .browser-tech .testing div {
+        &:nth-of-type(1) {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        /* &:nth-of-type(2) {
+        } */
+
+        &:nth-of-type(3) {
+            grid-column: 1 / 2;
+            grid-row: 2 / 4;
+        }
+
+        /* &:nth-of-type(4) {
+        }
+
+        &:nth-of-type(5) {
+        }
+
+        &:nth-of-type(6) {
+        } */
+    }
+
 }
 
 @media (min-width: 1024px) {
-	.container{
-		max-width: 1024px;
-	}
+    .ticker-bottom {
+        width: 100%;
+    }
 
     .works-page h1{
         font-size: var(--size-5xl);
@@ -863,6 +984,11 @@
             grid-column: 2 / 3;
             grid-row: 3 / 4;
         }
+    }
+
+    .browser-tech .hero-works-img-container img {
+        width: 60%;
+        height: auto;
     }
 }
 

@@ -392,6 +392,8 @@ ul{
     & span {
         color: var(--colour-background);
     }
+
+    width: 100%;
 }
 
 /* ── WORKS STYLING ── */
